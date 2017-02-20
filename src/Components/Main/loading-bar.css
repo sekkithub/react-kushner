@@ -1,0 +1,52 @@
+/* =======================
+   Components/Loading Bar
+   ======================= */
+  .c-loading-bar {
+    height: 4px;
+    /*opacity: 0;*/
+    position: relative;
+    transform: translateY(50px);
+    transition: opacity .4s 1.2s ease-in-out, transform .5s 1.4s;
+    width: 100%;
+
+    @include mq($from: tablet) {
+      margin-top: $unit-large * 1.5;
+    }
+
+    @include mq($until: tablet, $and: '(orientation: landscape)') {
+      display: none;
+    }
+  }
+
+  body.loaded .c-loading-bar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+    .c-loading-bar__wrapper {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+      .c-loading-bar__mask {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        width: 0;
+      }
+
+        .c-loading-bar__progress-bar {
+          background-color: $color-white;
+          height: 100%;
+          width: 100%;
+        }
+
+    .c-loading-bar__prebar {
+      background-color: rgba(255, 255, 255, 0.5);
+      bottom: 0;
+      height: 50%;
+      position: absolute;
+      width: 100%;
+    }

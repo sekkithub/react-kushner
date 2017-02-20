@@ -1,0 +1,22 @@
+.c-main {
+  left: 50%;
+  padding: 0 24px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all .4s;
+  top: 50%;
+  width: 100%;
+  z-index: 100;
+  max-width: 618px;
+}
+
+.c-main--entry {
+  top: calc(50% + 24px);
+}
+
+  .c-main__wrapper {
+    color: white;
+    height: 174px;
+    max-width: 100%;
+    position: relative;
+  }

@@ -1,0 +1,30 @@
+.c-contact {
+  bottom: 48px;
+  left: 48px;
+  /*opacity: 0;*/
+  position: absolute;
+  /*transform: scale(0.8, 0.8);*/
+  transition: opacity .4s .9s ease-in-out, transform .6s .9s cubic-bezier(0.8, -1.1, 0.5, 1.9);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+body.loaded .c-contact {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+  .c-contact__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+
+    .c-contact__item {
+      margin-bottom: 6px;
+    }
+
+      .c-contact__link {
+        backface-visibility: hidden;
+        text-decoration: none;
+      }

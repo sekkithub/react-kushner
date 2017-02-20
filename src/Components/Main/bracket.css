@@ -1,0 +1,53 @@
+/* =======================
+   Components/Bracket
+   ======================= */
+  .c-bracket {
+    height: 174px;
+    margin: 0 auto;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(0) rotate(45deg);
+    transition: all .4s;
+    width: 172px;
+  }
+
+  .c-bracket:before,
+  .c-bracket:after {
+    backface-visibility: hidden;
+    background: url(./bracket.svg) no-repeat center center;
+    content: '';
+    height: 100%;
+    position: absolute;
+    background-size: 48px 100%;
+    width: 48px;
+    top: 0;
+  }
+
+  .c-bracket:before {
+    left: 0;
+  }
+
+  .c-bracket:after {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+
+  /*body.show-bracket .c-bracket {
+    opacity: 1;
+  }
+
+  body.open-bracket .c-bracket {
+    width: 100%;
+    transform: translateX(0);
+  }*/
+
+  .c-bracket {
+    opacity: 1;
+  }
+
+  .c-bracket {
+    width: 100%;
+    transform: translateX(0);
+  }

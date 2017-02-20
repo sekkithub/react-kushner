@@ -1,0 +1,7 @@
+.logo {
+  left: 48px;
+  top: 48px;
+  position: absolute;
+  /*transform: scale(.8,.8);*/
+  transition: opacity .4s .6s ease-in-out,transform .6s .6s cubic-bezier(.8,-1.1,.5,1.9);
+}
